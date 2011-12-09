@@ -10,7 +10,7 @@ Ext.require([
 
 Ext.application({
     name: 'YM',
-    controllers: ['Releases','Lists'],
+    controllers: ['Artists','Populars', 'Releases'],
     models: ['Artist', 'Release', 'ReleaseTrack', 'Track'],
     launch: function() {
         Ext.create('YM.view.Viewport');

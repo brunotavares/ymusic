@@ -1,6 +1,6 @@
-Ext.define('YM.view.list.Populars', {
+Ext.define('YM.view.popular.List', {
     extend: 'Ext.dataview.List',
-    alias: 'widget.listpopulars',
+    alias: 'widget.popularlist',
     config: {
         title: 'Popular',
         store: 'Populars',

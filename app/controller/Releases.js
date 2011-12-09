@@ -1,7 +1,7 @@
 Ext.define('YM.controller.Releases', {
     extend: 'Ext.app.Controller',
     stores: ['Releases', 'ReleaseTracks'],
-    views: ['release.List', 'release.Details'],
+    views: ['Viewport', 'release.List', 'release.Details'],
     
     init: function() {
         var me = this;
@@ -35,4 +35,3 @@ Ext.define('YM.controller.Releases', {
         Ext.getCmp('viewport').goBack(0);
     }
 });
-

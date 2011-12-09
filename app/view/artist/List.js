@@ -1,6 +1,6 @@
-Ext.define('YM.view.list.Artists', {
+Ext.define('YM.view.artist.List', {
     extend: 'Ext.Container',
-    alias: 'widget.listartists',
+    alias: 'widget.artistlist',
     config: {
         layout: 'fit',
         title: 'Artists',
@@ -16,7 +16,7 @@ Ext.define('YM.view.list.Artists', {
         },{
             xtype: 'list',
             store: 'Artists',
-            itemTpl: '{name}',
+            itemTpl: '{name}'
         }]
     }
 });

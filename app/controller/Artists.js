@@ -1,13 +1,13 @@
-Ext.define('YM.controller.Lists', {
+Ext.define('YM.controller.Artists', {
     extend: 'Ext.app.Controller',
-    stores: ['Populars', 'Artists'],
-    views: ['Viewport', 'list.TabPanel', 'list.Populars', 'list.Artists'],
+    stores: ['Artists'],
+    views: ['artist.List'],
     
     init: function() {
         var me = this;
         
         me.control({
-            'listartists > toolbar > textfield': {
+            'artistlist > toolbar > textfield': {
                 change: me.onArtistSearchChange,
                 clearicontap: me.onArtistSearchChange
             }
@@ -27,4 +27,3 @@ Ext.define('YM.controller.Lists', {
         }
     }
 });
-

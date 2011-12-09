@@ -11,7 +11,14 @@ Ext.define('YM.view.Viewport', {
             }
         },
         items: [{
-            xtype: 'listtabpanel'
+            xtype: 'tabpanel',
+            items: [{
+                xtype: 'releaselist'
+            },{
+                xtype: 'popularlist'
+            },{
+                xtype: 'artistlist'
+            }]
         }]
     },
     
