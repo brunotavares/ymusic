@@ -1,7 +1,6 @@
 Ext.define('YM.store.Populars', {
     extend: 'Ext.data.Store',
     model: 'YM.model.Track',
-    autoLoad: true,
     proxy: {
         type: 'ymusic',
         query: 'popular',

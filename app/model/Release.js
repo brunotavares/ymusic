@@ -3,7 +3,7 @@ Ext.define('YM.model.Release', {
     fields: [
         'id', 
         'title',
-        {name: 'releaseDate', type: 'date', dateFormat: 'Y-m-d\\TH:i:s\\Z'},
+//        {name: 'releaseDate', type: 'date', dateFormat: 'Y-m-d\\TH:i:s\\Z'},
         {name: 'artist_name', mapping: 'Artist.name'}
     ]
 });

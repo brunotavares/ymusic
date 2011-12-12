@@ -4,8 +4,7 @@ Ext.ClassManager.setAlias('Ext.data.proxy.YMusic', 'proxy.ymusic');
 
 Ext.require([
     'Ext.data.proxy.YMusic',
-    'Ext.XTemplate',
-    'Ext.field.Text'
+    'Ext.XTemplate'
 ]);
 
 Ext.application({
