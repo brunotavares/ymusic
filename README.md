@@ -14,3 +14,7 @@ Running
 ------------
 * Webkit based browsers, like Google Chrome and Safari.
 * Mobile, iPhone, Android based...
+
+TODO
+------------
+* Add artist pictures, maybe released pictures also: http://d.yimg.com/ec/image/v1/artist/289114 for eminem, http://d.yimg.com/ec/image/v1/artist/59353883 for adelle, etc...
