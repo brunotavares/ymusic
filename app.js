@@ -4,6 +4,7 @@ Ext.ClassManager.setAlias('Ext.data.proxy.YMusic', 'proxy.ymusic');
 
 Ext.require([
     'Ext.data.proxy.YMusic',
+    'Ext.tab.Panel',
     'Ext.XTemplate'
 ]);
 
