@@ -8,30 +8,22 @@ Ext.define('YM.controller.Releases', {
         
         me.control({
             'releaselist': {
-                select: me.onReleaseListItemTap
-            },
-            'releasedetails button[ui=back]': {
-                tap: me.onBackTap
+                select: me.onListItemTap
             }
         });
         me.callParent(arguments);
     },
     
-    onReleaseListItemTap: function(list, release) {
+    onListItemTap: function(list, release) {
         var viewport = Ext.getCmp('viewport'),
             tracksStore= this.getReleaseTracksStore(),
             detailsView = Ext.create('YM.view.release.Details');
         
-        detailsView.loadRecord(release);    
-        viewport.add(detailsView);
-        viewport.setActiveItem(detailsView);
-
-        tracksStore.removeAll();
-        tracksStore.filters.clear();
-        tracksStore.filter('release_id', release.getId());
-    },
-    
-    onBackTap: function() {
-        Ext.getCmp('viewport').goBack(0);
+        if(viewport.push(detailsView)) {
+            detailsView.loadRecord(release);
+            tracksStore.removeAll();
+            tracksStore.filters.clear();
+            tracksStore.filter('release_id', release.getId());
+        }
     }
 });

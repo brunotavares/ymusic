@@ -8,14 +8,14 @@ Ext.define('YM.controller.Artists', {
         
         me.control({
             'artistlist > toolbar > textfield': {
-                change: me.onArtistSearchChange,
-                clearicontap: me.onArtistSearchChange
+                change: me.onSearchChange,
+                clearicontap: me.onSearchChange
             }
         });
         me.callParent(arguments);
     },
     
-    onArtistSearchChange: function(textfield) {
+    onSearchChange: function(textfield) {
         var store = this.getArtistsStore(),
             value = Ext.String.trim(textfield.getValue());
             

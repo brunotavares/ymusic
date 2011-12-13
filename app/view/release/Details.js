@@ -2,6 +2,7 @@ Ext.define('YM.view.release.Details', {
     extend: 'Ext.form.Panel',
     alias: 'widget.releasedetails',
     
+    title: 'New Release Details',
     config: {
         defaultType: 'textfield',
         defaults: {
@@ -9,14 +10,6 @@ Ext.define('YM.view.release.Details', {
             clearIcon: false
         },
         items: [{
-            xtype: 'toolbar',
-            docked: 'top',
-            title: 'New Release Details',
-            items: [{
-                text: 'Back',
-                ui: 'back'
-            }]
-        },{
             fieldLabel: 'Artist',
             name: 'artist_name'
         },{

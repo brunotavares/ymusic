@@ -1,15 +1,13 @@
 Ext.define('YM.view.Viewport', {
     extend: 'Ext.navigation.View',
     alternateClassName: 'YM.Viewport',
+    id: 'viewport',
     
     config: {
         fullscreen: true,
-        navigationBar: {
-            hidden: true,
-            docked: 'top'
-        },
         items: [{
             xtype: 'tabpanel',
+            title: 'Y!Music',
             items: [{
                 xtype: 'releaselist'
             },{
