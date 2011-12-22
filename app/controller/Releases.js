@@ -25,5 +25,7 @@ Ext.define('YM.controller.Releases', {
             tracksStore.filters.clear();
             tracksStore.filter('release_id', release.getId());
         }
+        
+        return false;
     }
 });
