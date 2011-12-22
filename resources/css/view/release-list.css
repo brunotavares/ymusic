@@ -1,1 +1,1 @@
-.release-list .record{height:80px}.release-list .record img{float:left;margin-right:10px}.release-list .record h1{font-size:120%}.release-list .record h2{font-size:80%}
+.release-list .record{height:80px;width:100%}.release-list .record img{float:left;margin-right:10px}.release-list .record h1{text-overflow:ellipsis;overflow:hidden;font-size:120%;max-height:2.5em}.release-list .record h2{font-size:80%}

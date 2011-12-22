@@ -1,12 +1,16 @@
 .release-list{
 	.record{
 		height: 80px;
+		width: 100%;
 		img{
 			float: left;
 			margin-right: 10px;
 		}
 		h1{
-			font-size: 120%
+			text-overflow: ellipsis;
+			overflow: hidden;
+			font-size: 120%;
+			max-height: 2.5em;
 		}
 		h2{
 			font-size: 80%
